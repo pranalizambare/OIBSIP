@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Basic To Do Webapp
+    </title>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet">
+     
+    <script defer src="todo.js"></script>
+  </head>
+  <body background="https://tse4.mm.bing.net/th?id=OIP.yFw5wWgoGQ0zb03bVo8TUQHaHa&pid=Api&P=0"></Body>>
+    
+    <style>
+      h1{text-align:center;}
+      </style>
+      
+    <div id="todo-wrap">
+      
+      <h1 class="row">
+        &nbsp;&nbsp;&nbsp;
+        TODO APP
+        &nbsp;&nbsp;&nbsp;
+        
+      </h1>
+      <form id="todo-add">
+        <input type="text" id="todo-item" placeholder="todo list" required>
+        <input type="submit" id="todo-save" value="add">
+      </form>
+
+     
+      <div id="todo-list"></div>
+
+      <!--template-->
+      <template id="todo-template">
+      <div class="todo-row">
+        <input type="button" class="todo-del" value="delete">
+        <input type="button" class="todo-edit" value="edit">
+        <input type="text" class="todo-item" disabled>
+        <input type="button" class="todo-done" value="&#10004;">
+      </div>
+      </template>
+    </div>
+  </body>
+</html>
